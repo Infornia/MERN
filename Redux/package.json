@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "api": "babel-node server.js"
+    "api": "babel-node server.js",
+    "start": "SET \"NODE_ENV=development\" & webpack-dev-server --display-error-details",
+    "build": "SET \"NODE_ENV=build\" & webpack"
   },
   "author": "",
   "license": "ISC",
